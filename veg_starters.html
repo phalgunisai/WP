@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c23c29a18.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Desserts</title>
+    <style>
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="home_logo.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="main.html">Home</a>
+                    <a class="nav-link" href="breakfast.html">Breakfasts</a>
+                    <a class="nav-link" href="cakes.html">Cakes</a>
+                    <a class="nav-link" href="desserts.html">Desserts</a>
+                    <a class="nav-link" href="seafood.html">Fish and Seafood</a>
+                    <a class="nav-link" href="main_course.html">Main Course</a>
+                    <a class="nav-link" href="non_veg_starters.html">Non-Veg Starters</a>
+                    <a class="nav-link" href="noodles.html">Noodles</a>
+                    <a class="nav-link" href="salads.html">Salads</a>
+                    <a class="nav-link" href="soups.html">Soups</a>
+                    <a class="nav-link" href="veg_starters.html">Veg Starters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Veg Starters</h1>
+
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\vegpakora.jpg" alt="Veg Dish 1">
+        <div class="dish-details">
+            <h2>Vegetable Pakoras (Indian)</h2>
+            <p>Assorted vegetables, such as potatoes and onions, are coated in chickpea flour batter and deep-fried to create crispy, spiced fritters.</p>
+            <p>Price per serving: $220</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Vegetable Pakoras', 220)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\ptikka.jpg" alt="Veg Dish 2">
+        <div class="dish-details">
+            <h2>Paneer Tikka</h2>
+            <p>Cubes of paneer (Indian cottage cheese) marinated in a spiced yogurt mixture, grilled to perfection for a smoky, creamy texture.</p>
+            <p>Price per serving: $250</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Paneer Tikka', 250)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\vspring.jpg" alt="Veg Dish 3">
+        <div class="dish-details">
+            <h2>Veg Spring Rolls (Chinese)</h2>
+            <p>Crispy, deep-fried rolls filled with a mixture of stir-fried vegetables, often accompanied by a sweet and savory dipping sauce.</p>
+            <p>Price per serving: $230</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Veg Spring Rolls', 230)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\smush.jpg" alt="Veg Dish 4">
+        <div class="dish-details">
+            <h2>Stuffed Mushrooms</h2>
+            <p>Mushrooms filled with a savory mixture of breadcrumbs, herbs, and cheese, then baked until tender and delicious.</p>
+            <p>Price per serving: $210</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Stuffed Mushrooms', 210)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\falafel-recipe-1.jpg" alt="Veg Dish 5">
+        <div class="dish-details">
+            <h2>Falafel (Middle Eastern)</h2>
+            <p>Deep-fried balls made from ground chickpeas or fava beans, seasoned with herbs and spices, often served with pita bread and tahini sauce.</p>
+            <p>Price per serving: $240</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Falafel', 240)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\ADip.jpg" alt="Veg Dish 6">
+        <div class="dish-details">
+            <h2>Spinach and Artichoke Dip (American)</h2>
+            <p>A creamy, cheesy dip featuring spinach and artichoke hearts, often served with tortilla chips, crackers, or bread for dipping.</p>
+            <p>Price per serving: $230</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Spinach and Artichoke Dip', 240)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\Bruschetta.jpg" alt="Veg Dish 7">
+        <div class="dish-details">
+            <h2>Bruschetta (Italian)</h2>
+            <p>Slices of toasted bread topped with a mixture of fresh tomatoes, garlic, basil, and olive oil, creating a burst of Mediterranean flavors in every bite.</p>
+            <p>Price per serving: $210</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Bruschetta', 210)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\mtand.jpg" alt="Veg Dish 8">
+        <div class="dish-details">
+            <h2>Mushroom Tandoori (Indian)</h2>
+            <p>Mushrooms marinated in a spiced yogurt mixture, skewered, and grilled in a tandoor, offering a smoky and earthy vegetarian option.</p>
+            <p>Price per serving: $260</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Mushroom Tandoori', 260)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\pskin.jpg" alt="Veg Dish 9">
+        <div class="dish-details">
+            <h2>Potato Skins (American)</h2>
+            <p>Crispy potato skins filled with cheese, and green onions, often served with sour cream for dipping.</p>
+            <p>Price per serving: $220</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Potato Skins', 220)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\veg_starters\jalapenos.jpg" alt="Veg Dish 10">
+        <div class="dish-details">
+            <h2>Cheese Stuffed Jalapeños</h2>
+            <p>Jalapeño peppers filled with cream cheese or cheddar, breaded, and baked or fried to create a spicy and creamy appetizer, often served with a dipping sauce.</p>
+            <p>Price per serving: $230</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Cheese Stuffed Jalapeños', 230)">Add to Cart</button>
+        </div>
+    </div>
+    <a href="main.html#emSec" class="custom-outline-buttons rounded-pill" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">Back to Explore Menu</a>
+    <a href="#" class="custom-outline-buttons rounded-pill" onclick="viewCart()" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">View Cart</a>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

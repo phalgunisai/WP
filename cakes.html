@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c23c29a18.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Desserts</title>
+    <style>
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="home_logo.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="main.html">Home</a>
+                    <a class="nav-link" href="breakfast.html">Breakfasts</a>
+                    <a class="nav-link" href="cakes.html">Cakes</a>
+                    <a class="nav-link" href="desserts.html">Desserts</a>
+                    <a class="nav-link" href="seafood.html">Fish and Seafood</a>
+                    <a class="nav-link" href="main_course.html">Main Course</a>
+                    <a class="nav-link" href="non_veg_starters.html">Non-Veg Starters</a>
+                    <a class="nav-link" href="noodles.html">Noodles</a>
+                    <a class="nav-link" href="salads.html">Salads</a>
+                    <a class="nav-link" href="soups.html">Soups</a>
+                    <a class="nav-link" href="veg_starters.html">Veg Starters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Cakes</h1>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://blackandbrownbakers.com/wp-content/uploads/2020/07/Belgium-Pastry-1-768x688.jpg" alt="Belgium Chocolate Pastry">
+        <div class="dish-details">
+            <h2>Belgium Chocolate Pastry</h2>
+            <p>Description: Treat yourself to a slice of Belgian perfection, made with soft chocolate sponge layered with Belgium chocolate ganache and cocoa powder dusted on top of the pastry.</p>
+            <p>Price per serving: $169</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Belgium Chocolate Pastry', 169)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://th.bing.com/th/id/R.2e39228331c5f273bd5e19103a1af5f5?rik=ZsKpkVk8B1E1Ng&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0521%2f3929%2f4884%2fproducts%2fEgglessOpiumPastry1_grande.jpg%3fv%3d1632141178&ehk=r%2finn0bThpDJa8LdQn%2fw71Iz72Bmvh%2fvZI9D%2fNLdjZw%3d&risl=&pid=ImgRaw&r=0" alt="Chocolate Opium Pastry">
+        <div class="dish-details">
+            <h2>Chocolate Opium Pastry</h2>
+            <p>Description: Soft chocolate sponge layered with mousse cream and chocolate square on top.</p>
+            <p>Price per serving: $139</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Chocolate Opium Pastry', 139)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://mrbrownbakery.com/image/images/FaJL0voxA9l4ThnZbgxHTnr1QP5lCqW0woLfqLky.jpeg?p=full" alt="Pineapple Pastry">
+        <div class="dish-details">
+            <h2>Pineapple Pastry</h2>
+            <p>Description: Pineapple on Pizza or not, it sits perfectly well on a pastry. Perfect for an after-meal dessert. This soft pastry is a slice of heaven.</p>
+            <p>Price per serving: $100</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Pineapple Pastry', 100)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://www.sonibakers.com/uploaded_files/products/21-aug-2018-70.jpg" alt="Chocolate Truffle Pastry">
+        <div class="dish-details">
+            <h2>Chocolate Truffle Pastry</h2>
+            <p>Description: Can a pastry be any more chocolatey than Choco truffle? It is not easy to resist chocolate. This soft pastry is a slice of heaven.</p>
+            <p>Price per serving: $100</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Chocolate Truffle Pastry', 100)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://www.nandanmsd.com/wp-content/uploads/2020/08/Black-Forest-Pastry.png" alt="Black Forest Pastry">
+        <div class="dish-details">
+            <h2>Black Forest Pastry</h2>
+            <p>Description: Several layers of chocolate cake, with cherry filling, with lashings of whipped cream between each layer. The cake is then decorated with piped, whipped cream, maraschino cherries, and chocolate shavings.</p>
+            <p>Price per serving: $100</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Black Forest Pastry', 100)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://www.breadfactory.in/wp-content/uploads/2021/05/Oreo-chocolate-truffle-500x458-1.png" alt="Oreo Truffle Cake">
+        <div class="dish-details">
+            <h2>Oreo Truffle Cake</h2>
+            <p>Description: This Cake is a delightful and indulgent dessert that combines the beloved flavor of Oreo cookies with a creamy, luscious texture. It's a treat that's sure to please Oreo enthusiasts and dessert lovers alike.</p>
+            <p>Price per serving: $550</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Oreo Truffle Cake', 550)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://th.bing.com/th/id/OIP.rGHQuV_O6EcOPg6z36-GoAHaHa?rs=1&pid=ImgDetMain" alt="Opulent Butterscotch Bliss Cake">
+        <div class="dish-details">
+            <h2>Opulent Butterscotch Bliss Cake</h2>
+            <p>Description: This cake is a delicious dessert that features the rich and distinct flavor of butterscotch. It's a type of cake that incorporates butterscotch flavor into various components, creating a delightful treat for those who enjoy the unique combination, best cake for celebrations.</p>
+            <p>Price per serving: $510</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Opulent Butterscotch Bliss Cake', 510)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://th.bing.com/th/id/OIP.m06yLZuEy-dE-EIGkaRbSgHaHa?rs=1&pid=ImgDetMain" alt="Mango Shrikhand Cake(Eggless)">
+        <div class="dish-details">
+            <h2>Mango Shrikhand Cake(Eggless)</h2>
+            <p>Description: This Cake is an ideal dessert for mango lovers and those seeking a unique twist on traditional cakes. It is perfect for special occasions, celebrations, or simply as a decadent treat to savor any time of the year.</p>
+            <p>Price per serving: $500</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Mango Shrikhand Cake(Eggless)', 500)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://th.bing.com/th/id/OIP.m06yLZuEy-dE-EIGkaRbSgHaHa?rs=1&pid=ImgDetMain" alt="Death by Chocolate Eggless Cake">
+        <div class="dish-details">
+            <h2>Death by Chocolate Eggless Cake</h2>
+            <p>Description: This decadent cake is a dream come true for chocolate lovers, offering a rich and intense chocolate experience. (Chocolate Sponge + Chocolate Chips + Truffle + Mousse Cream)</p>
+            <p>Price per serving: $600</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Death by Chocolate Eggless Cake', 600)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="https://www.justbake.in/userfiles/6.jpg" alt="Irish Coffee Eggless Cake">
+        <div class="dish-details">
+            <h2>Irish Coffee Eggless Cake</h2>
+            <p>Description: Inspired by Irish Coffee, perfect for coffee lovers who want freshly made cakes. Being a cloud kitchen, we don't store any products and all our cakes and freshly prepared after receiving the order.</p>
+            <p>Price per serving: $650</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Irish Coffee Eggless Cake', 650)">Add to Cart</button>
+        </div>
+    </div>
+    <a href="main.html#emSec" class="custom-outline-buttons rounded-pill" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">Back to Explore Menu</a>
+    <a href="#" class="custom-outline-buttons rounded-pill" onclick="viewCart()" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">View Cart</a>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

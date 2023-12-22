@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c23c29a18.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Salads</title>
+    <style>
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="home_logo.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="main.html">Home</a>
+                    <a class="nav-link" href="breakfast.html">Breakfasts</a>
+                    <a class="nav-link" href="cakes.html">Cakes</a>
+                    <a class="nav-link" href="desserts.html">Desserts</a>
+                    <a class="nav-link" href="seafood.html">Fish and Seafood</a>
+                    <a class="nav-link" href="main_course.html">Main Course</a>
+                    <a class="nav-link" href="non_veg_starters.html">Non-Veg Starters</a>
+                    <a class="nav-link" href="noodles.html">Noodles</a>
+                    <a class="nav-link" href="salads.html">Salads</a>
+                    <a class="nav-link" href="soups.html">Soups</a>
+                    <a class="nav-link" href="veg_starters.html">Veg Starters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Salads</h1>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\caesar.jpg" alt="Caesar Salad (American)">
+        <div class="dish-details">
+            <h2>Caesar Salad (American)</h2>
+            <p>Description: Crisp romaine lettuce, croutons, and parmesan cheese, tossed in a creamy Caesar dressing, creating a classic and refreshing salad.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Caesar Salad (American)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\greek.jpg" alt="Greek Salad (Greek)">
+        <div class="dish-details">
+            <h2>Greek Salad (Greek)</h2>
+            <p>Description: A vibrant mix of tomatoes, cucumbers, olives, onions, and feta cheese, drizzled with olive oil and sprinkled with oregano, offering a Mediterranean delight.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Greek Salad (Greek)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\caprese.jpg" alt="Caprese Salad (Italian)">
+        <div class="dish-details">
+            <h2>Caprese Salad (Italian)</h2>
+            <p>Description: Slices of fresh mozzarella, tomatoes, and basil leaves, drizzled with balsamic vinegar and olive oil, creating a simple yet elegant Italian salad.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Caprese Salad (Italian)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\cobb.jpg" alt="Cobb Salad (American)">
+        <div class="dish-details">
+            <h2>Cobb Salad (American)</h2>
+            <p>Description: A hearty salad with rows of lettuce, tomatoes, bacon, avocado, chicken, eggs, and blue cheese, often served with a choice of dressing for a satisfying meal.</p>
+            <p>Price per serving: $170</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Cobb Salad (American)', 170)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\nicoise.jpg" alt="Nicoise Salad (French)">
+        <div class="dish-details">
+            <h2>Nicoise Salad (French)</h2>
+            <p>Description: A composed salad featuring tuna, boiled eggs, green beans, olives, and potatoes, often served with a vinaigrette dressing for a French culinary experience.</p>
+            <p>Price per serving: $190</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Nicoise Salad (French)', 190)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\waldorf.jpg" alt="Waldorf Salad (American)">
+        <div class="dish-details">
+            <h2>Waldorf Salad (American)</h2>
+            <p>Description: A combination of apples, celery, walnuts, and grapes, dressed in mayonnaise or yogurt, creating a sweet and crunchy American salad.</p>
+            <p>Price per serving: $210</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Waldorf Salad (American)', 210)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\tabb.jpg" alt="Tabbouleh (Middle Eastern)">
+        <div class="dish-details">
+            <h2>Tabbouleh (Middle Eastern)</h2>
+            <p>Description: A refreshing salad made with bulgur, tomatoes, parsley, mint, and lemon juice, often served in lettuce leaves or with pita bread for a bright and flavorful dish.</p>
+            <p>Price per serving: $200</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Tabbouleh (Middle Eastern)', 200)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\fattoush.jpg" alt="Fattoush (Levantine)">
+        <div class="dish-details">
+            <h2>Fattoush (Levantine)</h2>
+            <p>Description: A Middle Eastern salad with a base of crispy pita bread, mixed with a variety of fresh vegetables, herbs, and a tangy sumac dressing, offering a delightful crunch and flavor.</p>
+            <p>Price per serving: $190</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Fattoush (Levantine)', 190)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\bean.jpg" alt="Bean Salad (Various)">
+        <div class="dish-details">
+            <h2>Bean Salad (Various)</h2>
+            <p>Description: A mixed bean salad often featuring kidney beans, black beans, chickpeas, and more, combined with vegetables and a zesty vinaigrette dressing, providing a wholesome and nutritious option.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Bean Salad (Various)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\salads\mango.jpg" alt="Mango Avocado Salad (Various)">
+        <div class="dish-details">
+            <h2>Mango Avocado Salad (Various)</h2>
+            <p>Slices of ripe mango and creamy avocado paired with red onions, cilantro, and a lime dressing, creating a tropical-inspired salad with a sweet and tangy kick.</p>
+            <p>Price per serving: $180</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Mango Avocado Salad (Various)', 180)">Add to Cart</button>
+        </div>
+    </div>
+    <a href="main.html#emSec" class="custom-outline-buttons rounded-pill" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">Back to Explore Menu</a>
+    <a href="#" class="custom-outline-buttons rounded-pill" onclick="viewCart()" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">View Cart</a>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c23c29a18.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Soups</title>
+    <style>
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="home_logo.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="main.html">Home</a>
+                    <a class="nav-link" href="breakfast.html">Breakfasts</a>
+                    <a class="nav-link" href="cakes.html">Cakes</a>
+                    <a class="nav-link" href="desserts.html">Desserts</a>
+                    <a class="nav-link" href="seafood.html">Fish and Seafood</a>
+                    <a class="nav-link" href="main_course.html">Main Course</a>
+                    <a class="nav-link" href="non_veg_starters.html">Non-Veg Starters</a>
+                    <a class="nav-link" href="noodles.html">Noodles</a>
+                    <a class="nav-link" href="salads.html">Salads</a>
+                    <a class="nav-link" href="soups.html">Soups</a>
+                    <a class="nav-link" href="veg_starters.html">Veg Starters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Soups</h1>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\tsoups.jpg" alt="Tomato Basil Soup">
+        <div class="dish-details">
+            <h2>Tomato Basil Soup (Italian)</h2>
+            <p>Description: A velvety, tomato-based soup enriched with aromatic basil leaves. This comforting classic offers a harmonious blend of sweet and savory flavors.</p>
+            <p>Price per serving: $190</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Tomato Basil Soup (Italian)', 190)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\miso.jpg" alt="Miso Soup (Japanese)">
+        <div class="dish-details">
+            <h2>Miso Soup (Japanese)</h2>
+            <p>Description: A traditional Japanese soup made from fermented soybean paste (miso), seaweed, and tofu. It provides a delicate, umami-rich broth with a mild, earthy taste.</p>
+            <p>Price per serving: $200</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Miso Soup (Japanese)', 200)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\cnsoup.jpg" alt="Chicken Noodle Soup (American)">
+        <div class="dish-details">
+            <h2>Chicken Noodle Soup (American)</h2>
+            <p>Description: A hearty soup featuring tender pieces of chicken, noodles, and vegetables in a flavorful broth, offering warmth and comfort in every spoonful.</p>
+            <p>Price per serving: $190</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Chicken Noodle Soup (American)', 190)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\tom.jpg" alt="Tom Kha Gai (Thai)">
+        <div class="dish-details">
+            <h2>Tom Kha Gai (Thai)</h2>
+            <p>Description: A fragrant and creamy soup made with coconut milk, chicken, galangal, and lemongrass. It delivers a delightful fusion of sweet, sour, and spicy flavors.</p>
+            <p>Price per serving: $180</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Tom Kha Gai (Thai)', 180)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\minestrone.jpg" alt="Minestrone (Italian)">
+        <div class="dish-details">
+            <h2>Minestrone (Italian)</h2>
+            <p>Description: A vegetable-packed soup with a tomato-based broth, beans, pasta, and a medley of fresh herbs, providing a hearty and nutritious meal in a bowl.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Minestrone (Italian)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\hot.jpg" alt="Hot and Sour Soup (Chinese)">
+        <div class="dish-details">
+            <h2>Hot and Sour Soup (Chinese)</h2>
+            <p>Description: A zesty and tangy soup featuring a variety of ingredients, including mushrooms, tofu, and bamboo shoots, in a flavorful, spicy broth.</p>
+            <p>Price per serving: $170</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Hot and Sour Soup (Chinese)', 170)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\lentil.jpg" alt="Lentil Soup (Mediterranean)">
+        <div class="dish-details">
+            <h2>Lentil Soup (Mediterranean)</h2>
+            <p>Description: A nourishing soup made from red or brown lentils, simmered with spices, vegetables. It offers a wholesome, earthy flavor.</p>
+            <p>Price per serving: $200</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Lentil Soup (Mediterranean)', 200)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\clam.jpg" alt="Clam Chowder (American)">
+        <div class="dish-details">
+            <h2>Clam Chowder (American)</h2>
+            <p>Description: A creamy soup brimming with tender clams, potatoes, and bacon, providing a rich and hearty seafood-infused experience.</p>
+            <p>Price per serving: $190</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Clam Chowder (American)', 190)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\french.jpg" alt="French Onion Soup (French)">
+        <div class="dish-details">
+            <h2>French Onion Soup (French)</h2>
+            <p>Description: A soul-warming soup composed of caramelized onions, beef broth, and melted cheese, typically served with a crusty baguette crouton.</p>
+            <p>Price per serving: $160</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('French Onion Soup (French)', 160)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\soups\gaz.jpg" alt="Gazpacho (Spanish)">
+        <div class="dish-details">
+            <h2>Gazpacho (Spanish)</h2>
+            <p>Description: A chilled, refreshing soup made from ripe tomatoes, cucumbers, bell peppers, onions, and herbs. It offers a vibrant burst of flavors and is perfect for a warm day.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Gazpacho (Spanish)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <a href="main.html#emSec" class="custom-outline-buttons rounded-pill" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">Back to Explore Menu</a>
+    <a href="#" class="custom-outline-buttons rounded-pill" onclick="viewCart()" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">View Cart</a>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

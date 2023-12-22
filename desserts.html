@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c23c29a18.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Desserts</title>
+    <style>
+        .menu-item-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="home_logo.png" class="food-munch-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="main.html">Home</a>
+                    <a class="nav-link" href="breakfast.html">Breakfasts</a>
+                    <a class="nav-link" href="cakes.html">Cakes</a>
+                    <a class="nav-link" href="desserts.html">Desserts</a>
+                    <a class="nav-link" href="seafood.html">Fish and Seafood</a>
+                    <a class="nav-link" href="main_course.html">Main Course</a>
+                    <a class="nav-link" href="non_veg_starters.html">Non-Veg Starters</a>
+                    <a class="nav-link" href="noodles.html">Noodles</a>
+                    <a class="nav-link" href="salads.html">Salads</a>
+                    <a class="nav-link" href="soups.html">Soups</a>
+                    <a class="nav-link" href="veg_starters.html">Veg Starters</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <h1>Desserts</h1>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\tiramisu.jpg" alt="Tiramisu (Italian)">
+        <div class="dish-details">
+            <h2>Tiramisu (Italian)</h2>
+            <p>Description: A classic Italian dessert made with layers of coffee-soaked ladyfingers and a mascarpone cheese mixture, dusted with cocoa powder for a rich and indulgent treat.</p>
+            <p>Price per serving: $250</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Tiramisu (Italian)', 250)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\swiss.jpg" alt="Chocolate Fondue (Swiss)">
+        <div class="dish-details">
+            <h2>Chocolate Fondue (Swiss)</h2>
+            <p>Description: Melted chocolate, often with a variety of dippable items like strawberries, bananas, and marshmallows, for a fun and interactive dessert experience.</p>
+            <p>Price per serving: $250</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Chocolate Fondue (Swiss)', 250)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\creme.jpg" alt="Creme Brulee (French)">
+        <div class="dish-details">
+            <h2>Creme Brulee (French)</h2>
+            <p>Description: A luscious French dessert with a creamy custard base and a caramelized sugar crust, providing a delightful contrast of textures and flavors.</p>
+            <p>Price per serving: $200</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Creme Brulee (French)', 200)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\cheesecake.jpg" alt="Cheesecake (American)">
+        <div class="dish-details">
+            <h2>Cheesecake (American)</h2>
+            <p>Description: A rich and velvety dessert with a graham cracker crust and a creamy cheese filling, often topped with a fruit compote or chocolate ganache.</p>
+            <p>Price per serving: $190</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Cheesecake (American)', 190)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\gulab.jpg" alt="Gulab Jamun (Indian)">
+        <div class="dish-details">
+            <h2>Gulab Jamun (Indian)</h2>
+            <p>Description: Deep-fried milk-based dumplings soaked in sugar syrup, offering a sweet and syrupy Indian delicacy that's both comforting and indulgent.</p>
+            <p>Price per serving: $120</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Gulab Jamun (Indian)', 120)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\mochi.jpg" alt="Mochi Ice Cream (Japanese)">
+        <div class="dish-details">
+            <h2>Mochi Ice Cream (Japanese)</h2>
+            <p>Description: Soft and chewy rice cake filled with ice cream in various flavors, often wrapped in a sweet rice dough, creating a delightful and bite-sized Japanese dessert.</p>
+            <p>Price per serving: $150</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Mochi Ice Cream (Japanese)', 150)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\baklava.jpg" alt="Baklava (Middle Eastern)">
+        <div class="dish-details">
+            <h2>Baklava (Middle Eastern)</h2>
+            <p>Description: Layers of phyllo pastry filled with nuts and sweetened with honey or syrup, creating a crunchy and sweet Middle Eastern pastry.</p>
+            <p>Price per serving: $250</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Baklava (Middle Eastern)', 250)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\panna.jpg" alt="Panna Cotta (Italian)">
+        <div class="dish-details">
+            <h2>Panna Cotta (Italian)</h2>
+            <p>Description: An Italian dessert made with sweetened cream that's thickened with gelatin, often served with a fruit compote or caramel sauce for a silky and creamy treat.</p>
+            <p>Price per serving: $170</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Panna Cotta (Italian)', 170)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\churros.jpg" alt="Churros (Spanish)">
+        <div class="dish-details">
+            <h2>Churros (Spanish)</h2>
+            <p>Description: Fried dough pastries often dusted with cinnamon and sugar, served with a chocolate dipping sauce for a warm and indulgent Spanish dessert.</p>
+            <p>Price per serving: $130</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Churros (Spanish)', 130)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="dish shadow menu-item-card" style="margin-top: 60px;">
+        <img src="C:\Users\Rajug\Desktop\WP\desserts\apple.jpg" alt="Apple Pie (American)">
+        <div class="dish-details">
+            <h2>Apple Pie (American)</h2>
+            <p>Description: A classic American pie with a flaky crust filled with spiced apples, often served warm with a scoop of vanilla ice cream for a comforting and timeless dessert.</p>
+            <p>Price per serving: $250</p>
+            <button class="custom-outline-buttons rounded-pill" onclick="addToCart('Apple Pie (American)', 250)">Add to Cart</button>
+        </div>
+    </div>
+    <a href="main.html#emSec" class="custom-outline-buttons rounded-pill" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">Back to Explore Menu</a>
+    <a href="#" class="custom-outline-buttons rounded-pill" onclick="viewCart()" style="width: 200px; border-radius: 20px; display: block; margin-top: 20px;">View Cart</a>
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items"></ul>
+                    <p>Total: $<span id="cart-total">0</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
